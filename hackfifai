@@ -136,7 +136,7 @@ function updateCircle(Fov,colorCircle)
        circle.NumSides = 100
        circle.Radius = (Fov * 6) / 2
        circle.Filled = false
-       circle.Position = Vector2.new(dwCamera.ViewportSize.X / 2, dwCamera.ViewportSize.Y / 2)
+       circle.Position = Vector2.new(mouse.X, mouse.Y + (guiservice.GetGuiInset(guiservice).Y))
    end
 end
 spawn(function()
